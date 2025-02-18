@@ -1,0 +1,178 @@
+\chapter{Quantum Systems}
+\lecture{1}{Jan 24 01:10}{}
+\section{Quantum Computing Systems}
+\begin{eg}
+Atoms: There is a nucleaus denoted \(Ze\) with an electron denoted as 
+\(e^{-}\). Having a positively charged nucleaus and electron can
+be described by a hamiltonian denoted as 
+\[
+  H^{at} = \frac{p^2}{2m_e} + V(r), V(r) = - \frac{1}{4\pi \epsilon_0} \frac{Ze^{2}}{r}
+\]  
+Where the hamiltonian represented the movement of the electron.
+
+In this potential, we get discrete energy states. More precisely,
+we can solve the schrodinger equation denoted 
+\[
+  H^{at}  \phi (\vec{r}) = E_n \phi (\vec{r})
+\]
+
+The eigen energies have the form
+\[
+  E_n = -\frac{1}{2}m_e c^2 \frac{\alpha^{2}}{n^{2} }
+\]
+This has discrete energy values and the smallest energy is for n=1 Where
+\(\alpha = \frac{e^2}{4\pi \epsilon_0 h c} \approx {\frac{1}{137} }\) 
+
+The eigenfunctions have the form of the following:
+
+\[
+  \phi(\vec{r}) = R_{ne}(r) Y_{em}(\theta ,\phi )
+\]
+which includes the spherical harmonics. These eigenfunctions are 
+also orthonormal wave functions. There are also the three quantum numbers
+denoted as: h,l, and m which are the principal quantum number,
+angular momentum, and projection angular momentum. 
+
+Intuitively for the hydrogen model, we see that the energystates
+come close and close as a factor of \( \frac{1}{n^{2} }\)
+\begin{remark}
+  Simplification: We only use a two level system denoted as 
+  \(E_1, E_2\) with wavfunction denoted as \(\psi_{100}, \psi_{210} \) 
+  which are going to be known as the s-orbital and the p-orbital which is a 
+  two level system.  
+\end{remark}
+\end{eg}
+
+\begin{eg}
+    Spin \(-\frac{1}{2}\): These systems include electrons, protons, and neutrons
+    which have spins which are an intrinsic form of angular momentum. All these
+    are spin \(\frac{-1}{2}  \)  particles. Spin always comes with a magnetic moment. 
+    One example is a electron and it has two states which are denoted as 
+    \[
+      \ket{\uparrow}, \ket{\downarrow}
+    \]
+    These are orthoganal to each other with angular momentums \(\frac{h}{2} \text{and} -\frac{h}{2}\). 
+    These electrons are in a magnetic field pointing in the z direction \(B = B \hat{e_Z}\)
+    
+    The interaction is denoted as 
+    \[
+      \hat{H_z} = \vec{\mu} \cdot \vec{B} = - (-g_s \mu_B \vec{S}/h)\cdot B
+    \]
+    where \(\mu_B = \frac{eh}{2m_e}\) which is the Bohr magneton. \(g_s =2  \)   
+    which is known as the g-factor. The spin operator can be denoted in the following way
+    \[
+      \vec{S} = ( S_x, S-y, S_z)^T
+    \]
+    which is simply \(\frac{h}{2} \)  multipled with the Pauli matrices. We can rewrite this as 
+    \[
+      g_s \mu_B \frac{S_z}{\overline{h} } B_z = \mu_B B_z \sigma_z
+    \]
+    Thus we get that 
+    \[
+      H_z \ket{\uparrow} = \mu B_z \ket{\uparrow}
+    \]
+    and negative for the latter.
+
+    With a 0 magnetic field, the spin up and spin down are the same. When you increase the energy,
+    they have different states denoted as \(\mu_B B_Z\) and \(-\mu_B B_z\). 
+    What you get here is called level splitting
+\end{eg}
+
+\begin{eg}
+Photon Polarization: the electric field of a light wave in the z-direction may be 
+in the form where the wave propagates in the z-direction. This is going to polarized
+in the plane of the chalk board. This can be written as 
+\[
+  \overline{E} (z,y) = (E_x, E_y e^{i \theta }) e^{i(kz-\omega t)}
+\]
+
+where the values are known to be the angular frequency, wavelength, and wave vector.
+We can rewrite this polarization vector as 
+\[
+  E_x \hat{e_x} + E_y e^{i \theta } e_y 
+\]
+with \( E_0 = \sqrt{E_x ^{2}  + E_y ^{2} } \). Thus it could have both an x and y component. 
+If we have that \(\theta  = 0 , E_y = 0 \implies E_x = E_0\)  which is 
+denoted as vertical linear polarization and the latter is called horizontal linear 
+polarization if \( E_y = E_0\). Each photon has its own unique polarization! 
+
+Polarization is a property carried by the individual photons that constitute the light field. 
+\[
+  \vec{V} = E_0 \hat{e_x}, \vec{H} = E_0 \hat{e_y}
+\]
+The polarization state vector of a single photon can be written as a superposition of 
+\( \ket{H} + e^{-i \phi } \ket{V}\) which is a two level system 
+\end{eg}
+
+\begin{eg}
+Superconducting Qubits: Suppose we have a LC-circuit with a inductor and a capacitor which
+creates a resonance with a frequency with angular frequency \(\omega_c = \frac{1}{\sqrt{2c} }\)
+
+Suppose we super cool it down such that the wire becomes superconducting
+and for the case where \(k_b T \ll  \overline{h} \omega_c\) is much smaller than the excitation frequency of the 
+circuit, we get discrete energy states for the oscillation that correspond to a 
+quantum harmonic oscillator. We can write the hamiltonian of the circuit in the form
+
+\[
+  \hat{H}  = \hat{q}^{2}/{2C} + \phi ^{2} /{2C}
+\]
+which is similar to the momentum and position operator we see in a quantum harmonic oscillator. 
+\(\hat{\phi }\) is the magnetic flux operator, \(\hat{q}\) is the charge operator. 
+
+This creates a quadratic potential well with energy states \(E_0 = h \frac{\omega}{2}\) with
+spaces of \(h \omega \) . The energies thus can be expressed as 
+\[
+  E_n = h \omega_c (n + \frac{1}{2})
+\]
+If you want this to be a two level system, it is practically bad since you might couple to many other states due to
+its equal spacings. 
+We can replace the inductor \(l\) with a Josephson junction (quantum tunneling/nonlinear inductor)
+denoted as \(L_g\) . The hamiltonian of this system is not modified as 
+\[
+  \hat{H} = \frac{q^2}{2C} -E_y \cos \phi 
+\]
+which is a anharmonic oscillator with energy levels that are different with 
+spacings that get smaller and smaller as it goes up. This is useful for defining
+a two level system practical for control purposes where the energy levels 
+\(\omega _{21} < \omega _{10} \approx 2 \pi \cdot 5 GHz\) which can be controlled by microwaves. 
+Thus we get a two level system!
+
+\end{eg}
+
+\begin{remark}
+  Linear Algebra Review:
+
+  \begin{definition}
+    wave functions can be interpreted as vectors in a vector space \(V\)  which
+    is a hilbert space. We denote these in Dirac notation by \(\ket{\psi}\) . 
+    For linear combinations. For \(c_i \in C \text{and} \ket{\psi_i} \in V\)  we have that 
+    \[
+      \ket{\psi } = c_1 \ket{\psi_1} + \dots + c_n \ket{\psi_n} \in V
+    \]
+
+    A set fo vectors \(\ket{\psi}\)  is linearly independent if none of the vectors can be written
+    as a linear combination of the other vectors. In additional, if such a set spans the entire vector 
+    space, it is called a basis. 
+  \end{definition}
+
+  \begin{definition}
+    Two level systems are described by 2 dimensional vector spaces in \(C^2\) 
+    spanned by two basis vectors \( \ket{v_1} \ket{v_2}\) . Any vector in that 
+    vector space can be expressed as 
+    \[
+      \ket{\psi} = c_1 \ket{v_1} + c_2 \ket{v_2}
+    \]
+    Column vectors can be written as 
+    \[
+      \ket{\psi} = (c_1 c_2)^T
+    \]
+    and the complex conjugate can be written as 
+    \[
+      \ket{\psi} = (c_1 c_2)^{*}
+    \]
+    The scalar product is denoted as 
+    \[
+      \bra{\beta }\ket{\alpha } = (b_1^* b_2^*) (a_1 a_2)^T
+    \]
+  \end{definition}
+\end{remark}

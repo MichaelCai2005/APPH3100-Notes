@@ -1,0 +1,116 @@
+\lecture{2}{Jan 24 01:10}{}
+\chapter{Schrodinger's Equation}
+\section{Time Independent Equation}
+\begin{remark}
+The time-independent Schrödinger equation is 
+\[
+    \hat{H} \psi(x) = E \psi(x),
+\]
+and for stationary states the probability density is time independent:
+\[
+    \frac{\mathrm{d}}{\mathrm{d}t} \left|\psi(x,t)\right|^2 = 0.
+\]
+For the case \(V(x)=0\), a solution is the plane wave
+\[
+    \phi(x) = e^{ikx}.
+\]
+Since
+\[
+    E = \frac{\hbar^2 k^2}{2m} = \frac{p^2}{2m}\quad\text{with } p=\hbar k,
+\]
+this solution represents a free particle. However, note that the plane wave is not normalizable (its probability density does not integrate to 1 over all space). To construct a physical (normalizable) state, we use a superposition of plane waves:
+\[
+    \phi(x) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} \gamma(k) \, e^{ikx}\, \mathrm{d}k,
+\]
+where \(\gamma(k)\) is a weight function (analogous to a set of coefficients \(c_k\) in a discrete expansion) chosen so that \(\phi(x)\) is square-integrable.
+\end{remark}
+
+\begin{remark}
+We now choose a specific form for \(\gamma(k)\); for example, a Gaussian centered at \(k_0\):
+\[
+    \gamma(k) = A\, \exp\!\left[-\frac{a^2 (k-k_0)^2}{4}\right].
+\]
+The Fourier transform yields
+\[
+    \phi(x) = \frac{\sqrt{2}A}{a}\,\exp\!\left[-\frac{x^2}{a^2}\right]\,e^{ik_0 x}.
+\]
+Here, \(e^{ik_0 x}\) represents a plane wave, while the Gaussian envelope \(\exp(-x^2/a^2)\) determines the localization in position space. Note that a narrow Gaussian in momentum space (i.e. a well-defined momentum) corresponds to a wide Gaussian in position space. In this case the uncertainties satisfy
+\[
+    \Delta x\, \Delta k = \frac{1}{2}.
+\]
+Including the time dependence (recalling that for each plane wave \(e^{ikx}\) we have
+\[
+    \phi(t) \propto e^{-i\omega t},\quad\text{with }\omega = \frac{E}{\hbar} = \frac{\hbar k^2}{2m}),
+\]
+we can write the full time-dependent wave function.
+\end{remark}
+
+\begin{remark}
+Suppose we wish to prepare a particle in a wave packet with a momentum distribution sharply peaked around \(k_0\). In momentum space, this means
+\[
+    \frac{1}{a} \ll k_0.
+\]
+We then Taylor expand the dispersion relation \(\omega(k)\) about \(k_0\):
+\[
+    \omega(k) \approx \omega(k_0) + \left.\frac{\mathrm{d}\omega}{\mathrm{d}k}\right|_{k=k_0} (k-k_0).
+\]
+Writing \(k = k_0 + \delta\), the wave function becomes
+\[
+    \phi(x,t) = \frac{1}{\sqrt{2\pi}}\,e^{ik_0 x}\,e^{-i\omega(k_0)t} \int_{-\infty}^{\infty} \gamma(k_0+\delta)\,e^{i\delta\left(x-\left.\frac{\mathrm{d}\omega}{\mathrm{d}k}\right|_{k=k_0} t\right)} \,\mathrm{d}\delta.
+\]
+This shows that there are two relevant velocities:
+\begin{itemize}
+    \item The **phase velocity**:
+    \[
+        v_{pw} = \frac{\omega(k_0)}{k_0} = \frac{\hbar k_0}{2m} = \frac{p}{2m},
+    \]
+    which is the velocity associated with the phase of the carrier wave.
+    \item The **group velocity**:
+    \[
+        v_{g} = \left.\frac{\mathrm{d}\omega}{\mathrm{d}k}\right|_{k=k_0} = \frac{\hbar k_0}{m} = \frac{p}{m},
+    \]
+    which is the velocity at which the envelope (and thus the particle) propagates.
+\end{itemize}
+Thus, although the carrier wave has a phase velocity of \(p/(2m)\), the actual particle travels at the group (or classical) velocity \(p/m\). In addition, if the momentum spread is not extremely narrow, the wave packet will spread over time.
+\end{remark}
+
+\begin{remark}
+Now consider a situation with a potential \(V(x)\) such that at some point the energy \(E\) of the particle equals the potential, meaning the kinetic energy is zero there. These are the classical turning points where \(E=V(x)\). However, the quantum mechanical wave function can “leak” (tunnel) beyond these classical turning points.
+
+For example, consider a step potential defined by
+\[
+    V(x) = \begin{cases}
+    0, & x < a,\\[1mm]
+    V_0, & x \ge a.
+    \end{cases}
+\]
+We label region 1 (where \(x < a\)) and region 2 (where \(x \ge a\)). Suppose that in region 1 \(E>0\) so that the solution is oscillatory:
+\[
+    -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2 \psi}{\mathrm{d}x^2} = E \psi,
+\]
+with the solution
+\[
+    \psi_1(x) = e^{ikx},\quad\text{where } k = \sqrt{\frac{2mE}{\hbar^2}}.
+\]
+In region 2 the Schrödinger equation is
+\[
+    -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2 \psi}{\mathrm{d}x^2} + V_0\,\psi = E \psi.
+\]
+Rearranging, we have
+\[
+    -\frac{\hbar^2}{2m}\frac{\mathrm{d}^2 \psi}{\mathrm{d}x^2} = (E-V_0) \psi.
+\]
+If \(E < V_0\), then \(E-V_0\) is negative; defining
+\[
+    \kappa = \sqrt{\frac{2m(V_0-E)}{\hbar^2}},
+\]
+the differential equation becomes
+\[
+    \frac{\mathrm{d}^2 \psi}{\mathrm{d}x^2} = \kappa^2 \psi,
+\]
+with general solution
+\[
+    \psi_2(x) = A\,e^{-\kappa x} + B\,e^{\kappa x}.
+\]
+For a physically acceptable solution (one that does not blow up as \(x\to\infty\)), we choose the decaying exponential (set \(B=0\)). Notice that while the wave function \(\psi(x)\) remains continuous across the boundary at \(x=a\), its derivative may be discontinuous because the potential is discontinuous there.
+\end{remark}

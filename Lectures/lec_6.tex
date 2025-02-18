@@ -1,0 +1,189 @@
+\lecture{6}{Feb 12 01:10}{}
+\section{Algebra Notation}
+Recall that the definition of a bra and ket vector where 
+the ket vector is a column vector that is N dimensional and the bra vector is the dual 
+space of the ket vector. We define the inner product as 
+\[
+    \bra{a}\ket{a}  = \sum_{i} a_i^* a_j \bra{u_j}\ket{u_j} 
+\]  
+\[
+    = \sum_{i} \vert a_i \vert ^{2} 
+\]
+We can the normalized vector of \(\ket{a}\) to be 
+\[
+    \frac{\ket{a}}{\sqrt{\bra{a}\ket{a}} } \implies  \bra{a}\ket{a}_{norm} = \frac{\bra{a}\ket{a}}{\bra{a}\ket{a}}
+\] 
+In the context of quantum mechanics we can have two states that we define as 
+\[
+    \ket{\psi } =A \begin{pmatrix}
+         \alpha_1 \\
+          \alpha_2\\
+    \end{pmatrix}
+\] which represent the two states 
+\[
+    \implies \bra{\psi} \ket{\psi} = 1 \implies A = \frac{1}{\sqrt{\alpha_1 ^{2} +   \alpha_{2}^{2}  } }
+\]
+Recall the square well and how the normalization is present here. Thus our state is 
+\[
+    \ket{\psi} = \frac{1}{\sqrt{\alpha_1 ^{2} + \alpha_2 ^{2} } } \begin{pmatrix}
+         \alpha_1 \\
+          \alpha_2\\
+    \end{pmatrix}
+\]
+We write the probability of measuring such as \(\sqrt{P_1} \) and \(\sqrt{P_2} \). With this notation we can determine 
+what the expectation values are. 
+\section{Expectation Values}
+Suppose we have some operator \(\hat{O} \), then the expectation value corresponds to 
+\[
+    \frac{\bra{\psi } \hat{O}  \ket{\psi}}{\bra{\psi}\ket{\psi}}
+\]   
+Assuming that the wave function is already normalized, we can compute the numerator 
+\[
+    \bra{\psi} \left[ \hat{O} \ket{\psi} \right] 
+\]
+\[
+    \hat{O} \ket{\psi} = \sum_{i} \alpha_i ^{\prime}  \ket{u_i} 
+\]
+\[
+    \bra{\psi}\ket{\psi ^{\prime} } = \sum_{i,j} \alpha_j^* \alpha_i ^{\prime} \bra{u_j}\ket{u_i} 
+\]
+\[
+    = \sum_{j} \alpha_j^* \alpha_j ^{\prime} = \langle \hat{O}  \rangle  
+\]
+This property that the operator on the wavefunction spits out a new wavefunction can be represented as a matrix of \(\dim N \times N\)
+\[
+    \begin{pmatrix}
+         &  &   \\
+         &  &   \\
+         &  &   \\
+    \end{pmatrix}_{N \times N} \begin{pmatrix}
+          \\
+          \\
+          \\
+    \end{pmatrix} = \begin{pmatrix}
+          \\
+          \\
+          \\
+    \end{pmatrix}
+\] 
+One question to ask is how can we find the variance of our expectation value (probability)?
+\[
+    \sigma_{\hat{O} }^{2}  = \langle \left( \hat{O} - \langle \hat{O}  \rangle  \right) ^{2}  \rangle 
+\]
+\[
+    \bra{\psi} \left( \hat{O} - \langle \hat{O}  \rangle  \right) ^{2}  \ket{\psi}
+\]
+Expanding out this quantity we can write this as 
+\[
+    \bra{\psi} \left( \hat{O}  - \langle \hat{O}  \rangle  \right) 
+    \left( \hat{O}  - \langle \hat{O}  \rangle  \right) \ket{\psi}  = 0
+\]
+Expanding the LHS2 we have 
+\[
+    \hat{O}  \ket{\psi} - \langle \hat{O}  \rangle \ket{\psi}
+\]
+the LHS1 is going to be the dual of LHS2. Therefore we can write this as 
+\[
+    \bra{ \left( \hat{O} - \langle \hat{O}  \rangle  \right) \psi  }
+\]
+This implies that LHS2 must go to \(0\) where we need to find a vector such that it satisfied 
+\[
+     \hat{O}  \ket{\psi} = \langle \hat{O}  \rangle  \ket{\psi}
+\] 
+Therefore the eigenvalue of the eigenstate is going to be the expectation value of the operator. This is also the case for 
+\[
+    \hat{H}  \ket{\psi} = E \ket{\psi}
+\]
+
+\begin{eg}
+    \[
+        \begin{pmatrix}
+            1 &0   \\
+             0&-1   \\
+        \end{pmatrix}
+    \]
+    \[
+        \ket{1} = \begin{pmatrix}
+             1 \\
+             0 \\
+        \end{pmatrix}, \ket{-1} = \begin{pmatrix}
+             0 \\
+              1\\
+        \end{pmatrix}
+    \]
+    Another example is 
+    \[
+        \begin{pmatrix}
+            0 &-i   \\
+             i&  0 \\
+        \end{pmatrix}
+    \]
+    \[
+        \det \left(  \hat{\sigma} _y - \lambda I \right) = 0
+    \]
+    \[
+        \ket{1} = \begin{pmatrix}
+             1 \\
+             i \\
+        \end{pmatrix}, \ket{-1} = \begin{pmatrix}
+             1 \\
+             -i \\
+        \end{pmatrix}
+    \]
+\end{eg}
+
+\begin{definition}
+    We have some vector and their poperties
+    \[
+        \ket{\psi } = \begin{pmatrix}
+              \\
+              \\
+              \\
+        \end{pmatrix}
+    \]
+    \[
+        \bra{\psi} = \left( \ket{\psi }^T \right) ^* = \ket{\psi}^{\dagger}
+    \]
+    \[
+        \left[ \hat{O}  \ket{\psi} \right] ^{\dagger} = \left[ \ket{\psi^{\prime} } \right]^{\dagger}
+    \]
+    \[
+        \implies \bra{\psi} \hat{O} ^{\dagger} = \bra{\psi^{\prime} }
+    \]
+    Let us try to compute the following
+    \[
+        \bra{\psi }  \ket{\hat{O} \psi} = \alpha
+    \]
+    \[
+        \bra{\hat{O} \psi } \ket{\psi } = \bra{\psi} \hat{O}^{\dagger} \ket{\psi } = \alpha^*
+    \]   
+    For Hermitian operators we have the property that 
+    \[
+        \hat{O}  = \hat{O} ^{\dagger}
+    \]  
+\end{definition}
+
+\section{Commutators}
+
+Suppose we had an operator 
+\[
+    \hat{O}  \ket{\psi _N} = \alpha_N \ket{\psi_N}
+\]
+On what condition can we find a second operator that satisfies the following:
+\[
+    \hat{Q}  \ket{\psi _N}= \beta_N \ket{\psi_N}
+\] where different operators have the same eigenvector. We can compute the quantity 
+\[
+    \hat{Q}  \hat{O}  \ket{\psi_N} = \beta_N \alpha_N \ket{\psi _N}
+\]
+\[
+    \hat{O}  \hat{Q}  \ket{\psi _N} = \alpha_N \beta_N \ket{\psi _N}
+\]
+Therefore we must have that 
+\[
+    \hat{Q} \hat{O} -\hat{O} \hat{Q} = 0
+\]
+\[
+    \left[ \hat{Q} ,\hat{O}  \right] = 0
+\] where these two operators are simultaneously diagonalizable. 
+Hello
