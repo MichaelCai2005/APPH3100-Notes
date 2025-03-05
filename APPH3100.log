@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.17)  4 MAR 2025 23:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.17)  5 MAR 2025 14:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1637,7 +1637,7 @@ Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 4.
-<Figures/kpZUe.png, id=142, 1284.8pt x 1027.84pt>
+<Figures/kpZUe.png, id=152, 1284.8pt x 1027.84pt>
 File: Figures/kpZUe.png Graphic file (type png)
 <use Figures/kpZUe.png>
 Package pdftex.def Info: Figures/kpZUe.png  used on input line 22.
@@ -1651,7 +1651,7 @@ Package mdframed Info: Box was splittet wrong
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 41.
-<Figures/img3046.png, id=150, 1041.8925pt x 862.22125pt>
+<Figures/img3046.png, id=160, 1041.8925pt x 862.22125pt>
 File: Figures/img3046.png Graphic file (type png)
 <use Figures/img3046.png>
 Package pdftex.def Info: Figures/img3046.png  used on input line 71.
@@ -1662,7 +1662,7 @@ Package pdftex.def Info: Figures/img3046.png  used on input line 71.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 78.
-<Figures/01.png, id=159, 390.70969pt x 217.5628pt>
+<Figures/01.png, id=170, 390.70969pt x 217.5628pt>
 File: Figures/01.png Graphic file (type png)
 <use Figures/01.png>
 Package pdftex.def Info: Figures/01.png  used on input line 84.
@@ -1685,7 +1685,7 @@ Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 4.
-<Figures/02.png, id=177, 529.22719pt x 493.845pt>
+<Figures/02.png, id=187, 529.22719pt x 493.845pt>
 File: Figures/02.png Graphic file (type png)
 <use Figures/02.png>
 Package pdftex.def Info: Figures/02.png  used on input line 6.
@@ -1760,7 +1760,7 @@ Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
 [20]
 
 [21]
-<Figures/06.png, id=275, 667.49374pt x 421.575pt>
+<Figures/06.png, id=285, 667.49374pt x 421.575pt>
 File: Figures/06.png Graphic file (type png)
 <use Figures/06.png>
 Package pdftex.def Info: Figures/06.png  used on input line 154.
@@ -1775,12 +1775,12 @@ Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
 
 [23]
 Chapter 3.
-<Figures/03.png, id=291, 326.21875pt x 225.84375pt>
+<Figures/03.png, id=302, 326.21875pt x 225.84375pt>
 File: Figures/03.png Graphic file (type png)
 <use Figures/03.png>
 Package pdftex.def Info: Figures/03.png  used on input line 7.
 (pdftex.def)             Requested size: 181.18454pt x 125.43779pt.
-<Figures/04.png, id=292, 895.345pt x 473.77pt>
+<Figures/04.png, id=303, 895.345pt x 473.77pt>
 File: Figures/04.png Graphic file (type png)
 <use Figures/04.png>
 Package pdftex.def Info: Figures/04.png  used on input line 18.
@@ -1793,7 +1793,7 @@ Package pdftex.def Info: Figures/04.png  used on input line 18.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 45.
-<Figures/05.png, id=302, 845.1575pt x 597.23125pt>
+<Figures/05.png, id=312, 845.1575pt x 597.23125pt>
 File: Figures/05.png Graphic file (type png)
 <use Figures/05.png>
 Package pdftex.def Info: Figures/05.png  used on input line 75.
@@ -1813,7 +1813,7 @@ Package pdftex.def Info: Figures/03.png  used on input line 97.
 
 
 [26]
-<Figures/06.jpg, id=316, 1284.8pt x 722.7pt>
+<Figures/06.jpg, id=326, 1284.8pt x 722.7pt>
 File: Figures/06.jpg Graphic file (type jpg)
 <use Figures/06.jpg>
 Package pdftex.def Info: Figures/06.jpg  used on input line 153.
@@ -1821,9 +1821,21 @@ Package pdftex.def Info: Figures/06.jpg  used on input line 153.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 163.
-)
+) (./Lectures/lec_11.tex
+Package marginnote Info: Margin note 31.1 is on absolute page 31 on input line 2.
+Package marginnote Info: right page because not two side mode on input line 2.
+Package marginnote Info: xpos seems to be 72.2698pt on input line 2.
 
-[27 <./Figures/06.jpg>] (./APPH3100.aux)
+
+[27 <./Figures/06.jpg>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 53.
+
+
+[28])
+
+[29] (./APPH3100.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-11-02>
@@ -1836,24 +1848,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `APPH3100.out' has not changed.
-(rerunfilecheck)             Checksum: CFDED27A9C8A6E62F540DE0D6BA4142F;2000.
+(rerunfilecheck)             Checksum: 813A058711B2DA4ABB52DF918B5E52EA;2329.
 Package logreq Info: Writing requests to 'APPH3100.run.xml'.
 \openout1 = `APPH3100.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53704 strings out of 473330
- 1209403 string characters out of 5723877
- 2103667 words of memory out of 5000000
- 75800 multiletter control sequences out of 15000+600000
+ 53702 strings out of 473330
+ 1209203 string characters out of 5723877
+ 2103731 words of memory out of 5000000
+ 75788 multiletter control sequences out of 15000+600000
  588320 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,12n,107p,1308b,1447s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfss0900.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on APPH3100.pdf (29 pages, 633184 bytes).
+Output written on APPH3100.pdf (31 pages, 641618 bytes).
 PDF statistics:
- 479 PDF objects out of 1000 (max. 8388607)
- 366 compressed objects within 4 object streams
- 122 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 387 compressed objects within 4 object streams
+ 129 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

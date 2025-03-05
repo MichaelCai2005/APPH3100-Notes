@@ -1,0 +1,127 @@
+\lecture{11}{March 5 01:10}{}
+Today's material will not be covered in the midterm:
+\section{Probability Density Current}
+Recall the step potential we had in Figure 3.2 where \(E > V_0\). We ask the question how much of the wave is reflected and how much goes 
+through? 
+\[
+	k = \sqrt{\frac{2mE}{\hbar ^{2} }} \quad k^{\prime} = \sqrt{2m\frac{E-V_0}{\hbar ^{2} }} 
+\] 
+We can match these coefficients such that 
+\[
+	\frac{B}{A} = \left( \frac{k-k^{\prime} }{k+ k^{\prime} } \right) \quad \frac{C}{A} = \left( \frac{2k}{k + k^{\prime} } \right) 
+\]
+where the reflection coefficient is given by 
+\[
+	\mathcal{R}  = \vert \frac{B}{A} \vert ^{2} \quad \mathcal{T}  = 1 - \mathcal{R}, \mathcal{T}  \neq  \vert \frac{C}{A} \vert ^{2}  
+\]
+Recall the time independent Schrodinger equation
+\begin{equation}
+	i \hbar  \frac{\partial \psi }{\partial t} = - \frac{\hbar ^{2} }{2m} \nabla ^{2} \psi + V \psi  
+\end{equation}
+where \(\rho = \vert \psi  \vert ^{2}  = \psi^* \psi \). Notice the equation in the dual space is denoted as 
+\[
+	-i \hbar  \frac{\partial \psi ^*}{\partial t} = - \frac{\hbar ^{2} }{2m} \nabla ^{2}  \psi ^* + V \psi^* 
+\]
+We wish to turn this to the time evolution of the probability density. by multiplying \((3.1) \times  \psi^*\) and vice versa for the dual.  
+\[
+	(1) \quad  i\hbar \psi ^* \frac{\partial \psi }{\partial t} = - \frac{\hbar ^{2} }{2m} \psi ^* \nabla  ^{2}  \psi  + V \vert \psi  \vert  ^{2} 
+\]
+\[
+	(2) \quad - i\hbar \psi  \frac{\partial \psi ^*}{\partial t} = - \frac{\hbar ^{2} }{2m} \psi \nabla ^{2} \psi ^* + V \vert \psi  \vert  ^{2} 
+\]
+\[
+	\left[ (1) \times  \psi ^* \right] - \left[ (2) \times  \psi  \right] = 
+	i\hbar  \left[ \psi ^* \frac{\partial \psi }{\partial t} + \psi  \frac{\partial \psi ^*}{\partial t}   \right]  = 
+	- \frac{\hbar ^{2} }{2m} \left[  \psi ^* \nabla ^{2}  \psi - \psi  \nabla  ^{2}  \psi ^* \right] 
+\]
+What we have is thus 
+\[
+	i \hbar  \frac{\mathrm{d}\psi \psi ^*}{\mathrm{d}t} = i \hbar \frac{\mathrm{d}\rho}{\mathrm{d}t}  
+\]
+\[
+	= - \frac{\hbar ^{2} }{2m }\vec{\nabla} \cdot \vec{J} 
+\]
+\[
+	\vec{J}  = \psi \nabla \psi ^* - \psi ^* \nabla  \psi 
+\]
+\(\vec{J} \) is known as the probability current where 
+\[
+	i\hbar \frac{\mathrm{d}\rho}{\mathrm{d}t} = - \frac{\hbar ^{2} }{2m} \vec{\nabla} \cdot \vec{J}  
+\] 
+
+\begin{remark}
+	Thus, if you have a highly curved wave function it will move rapidly since this is similar to the heat equation.
+	\[
+		\frac{\partial \rho}{\partial t} + \frac{i\hbar }{2m} \nabla \cdot \vec{J} = 0 
+	\]
+	Thus we can understand \(\vec{J} \) as the density of a fluid moving in and out of a tube. From here, we can calculate things like mass density and charge density for a wave function
+\end{remark}
+
+Now consider again the step potential where \(E> V_0\). We don't have to match boundary conditions but rather giving things in terms of probability of the left and right hand side:
+
+\[
+	\vec{J}_{in} = A^{2}  \left[ e^{ikx} (-ik)e^{-ikx} - e^{ikx} (ik) e^{-ikx}   \right]   
+\]
+\[
+	\vec{J}_{in} = - 2 A ^{2}  (ik)
+\]
+The reflected amount is 
+\[
+	\vec{J}_{R} = 2 B^{2} (ik) 
+\]
+\[
+	\vec{J}_T = -2 C^{2}  (ik^{\prime} )
+\]
+thus we see the difference where the momentum matters here. 
+\[
+	J_T + J_R = J_{in} 
+\]
+\[
+	\implies 1 = \frac{B^{2} }{A^{2} }- \frac{k^{\prime} }{k} \frac{C^{2} }{A^{2} }
+\]
+
+\section{Delta Functions}
+Consider the FSQ again and take the limit as the width of the barrier goes to 0 where we want to maintain the area of the whole we have in between the barrier. We can write this as 
+\[
+	\int_{-\infty }^{\infty} \alpha \delta(x) \,\mathrm{d}x = -\alpha 
+\]
+Thus the solution should be of the form of a wiggle in the middle and exponential decay other than the point \(x_0\). Let us integrate this for \(\pm \epsilon \)
+\[
+	\int_{-\epsilon }^{\epsilon } - \frac{\hbar ^{2} }{2m} \frac{\partial ^{2} \psi }{\partial x^{2} } + V(x) \psi (x)  \,\mathrm{d}x 
+\]  
+\[
+	= E \int_{-\epsilon }^{\epsilon } \psi   \,\mathrm{d}x 
+\]
+We can this in parts where
+\[
+	\int_{-\epsilon }^{\epsilon } - \frac{\hbar ^{2} }{2m} \frac{\partial ^{2} \psi }{\partial x^{2} } + V(x) \psi (x)  \,\mathrm{d}x = 
+	\at{- \frac{\hbar ^{2} }{2m} \left[ \frac{\partial \psi }{\partial x}  \right]}{-\epsilon }{\epsilon } + \psi (0) 
+\]  
+when we take the limit we get that 
+\[
+	E \int_{-\epsilon }^{\epsilon } \psi \mathrm{d}x  \,\mathrm{d}x = 0  
+\]
+We have the evaluation 
+\[
+	\at{- \frac{\hbar ^{2} }{2m} \left[ \frac{\partial \psi }{\partial x}  \right]}{-\epsilon }{\epsilon} = - \frac{\hbar ^{2} }{2m} \Delta \frac{\partial \psi }{\partial x} 
+\]
+\[
+	\psi (0) = - \alpha \psi (0)
+\]
+
+\[
+	\Delta \frac{\partial \psi }{\partial x} = - \frac{2m \alpha}{\hbar ^{2} } \psi (0)
+\]
+\[
+	\psi = \begin{dcases}
+		Ae^{kx} , x < 0  ;\\
+		Ae^{-kx} , x> 0  ;\\
+	\end{dcases} \quad \psi (0) = A
+\]
+\[
+	\Delta \frac{\partial \psi }{\partial x} = -2k A
+\]
+If we combine this information we have simply that 
+\[
+	k = \frac{m \alpha}{ \hbar ^{2} } \quad E = - \frac{\hbar ^{2}  k ^{2} }{2 m} = - \frac{m \alpha^{2} }{2 \hbar ^{2} }
+\] 

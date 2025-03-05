@@ -703,6 +703,9 @@ INPUT ./Figures/06.jpg
 INPUT ./Figures/06.jpg
 INPUT ./Figures/06.jpg
 INPUT ./Figures/06.jpg
+INPUT ./Lectures/lec_11.tex
+INPUT ./Lectures/lec_11.tex
+INPUT Lectures/lec_11.tex
 INPUT APPH3100.aux
 INPUT ./APPH3100.out
 INPUT ./APPH3100.out

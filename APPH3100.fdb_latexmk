@@ -1,17 +1,17 @@
 # Fdb version 4
-["biber APPH3100"] 1741142718.12445 "APPH3100.bcf" "APPH3100.bbl" "APPH3100" 1741147282.40161 0
-  "APPH3100.bcf" 1741147282 108185 3e9d746fcc2c180b9bc154540c4fbaf4 "pdflatex"
+["biber APPH3100"] 1741202136.56535 "APPH3100.bcf" "APPH3100.bbl" "APPH3100" 1741202147.72229 0
+  "APPH3100.bcf" 1741202147 108185 3e9d746fcc2c180b9bc154540c4fbaf4 "pdflatex"
   (generated)
   "APPH3100.bbl"
   "APPH3100.blg"
   (rewritten before read)
-["pdflatex"] 1741147278.66559 "c:/Users/micha/OneDrive/Notes/APPH3100/APPH3100.tex" "APPH3100.pdf" "APPH3100" 1741147282.40237 0
-  "APPH3100.aux" 1741147281 12200 a0b7856bf0df754dec9436ba8269c2c0 "pdflatex"
-  "APPH3100.bbl" 1741142731 486 76d65a242ec496c9b4361af646ff12cb "biber APPH3100"
-  "APPH3100.out" 1741147282 2000 cfded27a9c8a6e62f540de0d6ba4142f "pdflatex"
-  "APPH3100.run.xml" 1741147282 2338 14ab8c6c1b278fa36a1e9a37f697631d "pdflatex"
-  "APPH3100.tex" 1741142707 1395 36c5a1b40f1b46e9e1ad769e2ac911a6 ""
-  "APPH3100.toc" 1741147282 1936 ad0679226d853dad1527fd72c19652e5 "pdflatex"
+["pdflatex"] 1741202143.33618 "c:/Users/micha/OneDrive/Notes/APPH3100/APPH3100.tex" "APPH3100.pdf" "APPH3100" 1741202147.72325 0
+  "APPH3100.aux" 1741202147 12697 dac84376593c8f5e61c363f4ba75a344 "pdflatex"
+  "APPH3100.bbl" 1741202138 486 76d65a242ec496c9b4361af646ff12cb "biber APPH3100"
+  "APPH3100.out" 1741202147 2329 813a058711b2da4abb52df918b5e52ea "pdflatex"
+  "APPH3100.run.xml" 1741202147 2338 14ab8c6c1b278fa36a1e9a37f697631d "pdflatex"
+  "APPH3100.tex" 1741200005 1395 e06ff641cf84bb5da51701b542dec90e ""
+  "APPH3100.toc" 1741202147 2100 2952bd41bdab7b27ef4feb9d8070e83f "pdflatex"
   "Figures/01.png" 1738608859 10277 2a37f20f5f767a2c93741dee1bc44ee3 ""
   "Figures/02.png" 1738792961 22193 b6161fd23e8da40c32217f97ea0bc264 ""
   "Figures/03.png" 1741026206 3140 59e0652c55b2bb3a8d48abac880742e5 ""
@@ -23,6 +23,7 @@
   "Figures/kpZUe.png" 1738606926 33081 759021376fcd767c096e74157c9c8ba2 ""
   "Lectures/lec_1.tex" 1739419265 7175 e881558a31cc2d286a30abd57677f754 ""
   "Lectures/lec_10.tex" 1741029817 5742 c77e3e0769c6e01934ffbf0032c253ae ""
+  "Lectures/lec_11.tex" 1741202129 5142 fa62c0d30d3e74b9b9a9d6bd89bbebff ""
   "Lectures/lec_2.tex" 1739419352 5162 7072e40bc1ef50b36c7d062004e5b912 ""
   "Lectures/lec_3.tex" 1739419405 5404 cd5029b02ecb6cfa9ad48c88806c4060 ""
   "Lectures/lec_4.tex" 1739419426 6170 4dd27885506981349fc5c97e3fa980a3 ""
@@ -32,7 +33,7 @@
   "Lectures/lec_8.tex" 1741147046 4620 56a0ed5dfd90aeeca092e25901debfc5 ""
   "Lectures/lec_9.tex" 1741146981 5742 75e7991c973d6809f00c49943917c1a7 ""
   "c:/Users/micha/OneDrive/LaTeX-Template-main/Math.tex" 1734575576 2477 6dcfa87aaef735a8f1f61bb98ea52144 ""
-  "c:/Users/micha/OneDrive/Notes/APPH3100/APPH3100.tex" 1741142707 1395 36c5a1b40f1b46e9e1ad769e2ac911a6 ""
+  "c:/Users/micha/OneDrive/Notes/APPH3100/APPH3100.tex" 1741200005 1395 e06ff641cf84bb5da51701b542dec90e ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1734410073 2971 def0b6c1f0b107b3b936def894055589 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1734410073 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1734411192 3524 cb3e574dea2d1052e39280babc910dc8 ""
