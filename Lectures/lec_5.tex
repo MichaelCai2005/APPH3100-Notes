@@ -1,2 +1,146 @@
 \lecture{5}{Jan 24 01:10}{}
-\chapter{Linear Algebra}
+\section*{1.\ Infinite Square Well --- Stationary States}
+
+Consider a 1D infinite square well of width $a$, running from $x=0$ to $x=a$, with 
+\[
+V(x) \;=\; 
+\begin{cases}
+0, & 0 < x < a,\\
+\infty, & \text{otherwise}.
+\end{cases}
+\]
+The stationary‐state wavefunctions are
+\[
+\psi_n(x) 
+\;=\; 
+\sqrt{\frac{2}{a}}\,
+\sin\Bigl(\frac{n \pi x}{a}\Bigr),
+\quad
+n = 1,2,3,\dots
+\]
+and the corresponding energies are 
+\[
+E_n 
+\;=\;
+\frac{\hbar^2 \pi^2}{2 m a^2}\,n^2.
+\]
+These eigenstates form an \emph{orthonormal} basis in the sense that
+\[
+\int_{0}^{a}\psi_m^*(x)\,\psi_n(x)\,dx 
+\;=\;\delta_{m,n}.
+\]
+Any wavefunction $\psi(x)$ satisfying the boundary conditions can be expanded as
+\[
+\psi(x) \;=\; \sum_{n=1}^{\infty} c_n\,\psi_n(x).
+\]
+
+\section*{2.\ Complex Vector Space and Inner Products}
+
+\paragraph{Finite‐Dimensional Analogy.}
+We can think of a general complex vector 
+\(\vec{r} \in \mathbb{C}^N\) as
+\[
+\vec{r} 
+\;=\;
+\begin{bmatrix}
+c_1\\ 
+c_2\\
+\vdots\\
+c_N
+\end{bmatrix},
+\]
+with an inner product 
+\[
+\vec{r}^{\,\dagger}\,\vec{r} 
+\;=\; 
+\sum_{i=1}^N c_i^*\,c_i 
+\;=\; 
+\|\vec{r}\|^2.
+\]
+The \emph{outer product} $\vec{r}\,\vec{r}^\dagger$ is a matrix (an operator) formed by taking all pairwise products of components.
+
+\paragraph{Ket and Bra Notation (Dirac).}
+In quantum mechanics, we write a vector as a \emph{ket}:
+\[
+\ket{\alpha}
+\;=\;
+\sum_{i} a_i \,\ket{u_i},
+\]
+where $\{\ket{u_i}\}$ is a basis of the Hilbert space and $a_i \in \mathbb{C}$ are coefficients.  The \emph{bra} $\bra{\alpha}$ is the Hermitian‐conjugate (row‐vector) version:
+\[
+\bra{\alpha} 
+\;=\;
+\bigl(\ket{\alpha}\bigr)^\dagger
+\;=\;
+\sum_{i} a_i^*\,\bra{u_i}.
+\]
+The inner product $\braket{\beta}{\alpha}$ is a scalar, generally complex:
+\[
+\braket{\beta}{\alpha} 
+\;=\;
+\sum_{ij} b_i^*\, a_j\,\braket{u_i}{u_j}
+\;=\;
+\sum_i b_i^* \, a_i
+\quad
+(\text{if }\ket{u_i}\text{ are orthonormal}). 
+\]
+For orthonormal $\{\ket{u_i}\}$, we have $\braket{u_i}{u_j} = \delta_{ij}$, and the completeness relation
+\[
+\sum_{i}\ket{u_i}\bra{u_i} 
+\;=\; 
+\mathbf{1}.
+\]
+
+\section*{3.\ Operators}
+
+Operators $\hat{O}$, $\hat{H}$, $\hat{p}$, etc.\ act on kets to produce new kets:
+\[
+\hat{O}\,\ket{\alpha} 
+\;=\;
+\ket{\beta}.
+\]
+The bra version is obtained by taking the Hermitian conjugate:
+\[
+\bra{\alpha}\,\hat{O}^\dagger 
+\;=\;
+\bra{\beta}.
+\]
+For a Hermitian operator (an observable) $\hat{O} = \hat{O}^\dagger$. 
+
+\paragraph{Examples.}
+- $\hat{H}\ket{\psi_n} = E_n \ket{\psi_n}$, the energy‐eigenvalue equation.  
+- Linearity: \(\hat{O}(\ket{\alpha}+\ket{\beta}) = \hat{O}\ket{\alpha} + \hat{O}\ket{\beta}\).  
+
+\paragraph{Noncommuting Operators.}
+The commutator of two operators $\hat{O}_1, \hat{O}_2$ is
+\[
+[\hat{O}_1, \hat{O}_2]
+\;=\;
+\hat{O}_1\,\hat{O}_2 
+\;-\; 
+\hat{O}_2\,\hat{O}_1.
+\]
+For position and momentum in 1D, we have 
+\(
+\bigl[\hat{p}, \hat{x}\bigr] = -i\hbar,
+\)
+so $\hat{p}\,\hat{x} \neq \hat{x}\,\hat{p}$.  In general, if two operators \emph{do} commute, they can be \emph{simultaneously diagonalized}.  If they \emph{do not} commute, measuring one observable disturbs the other.
+
+\section*{4.\ Outer Products as Projectors}
+
+The outer product \(\ket{\alpha}\bra{\alpha}\) is itself an operator.  For instance, acting on a state \(\ket{\beta}\) gives
+\[
+(\ket{\alpha}\bra{\alpha})\,\ket{\beta}
+\;=\;
+\ket{\alpha}\,\bigl(\braket{\alpha}{\beta}\bigr),
+\]
+which is a vector parallel to $\ket{\alpha}$ (scaled by the inner product).  If $\ket{\alpha}$ is normalized, \(\ket{\alpha}\bra{\alpha}\) \emph{projects} any vector onto the direction of $\ket{\alpha}$.
+
+\paragraph{Completeness (Resolution of the Identity).}
+If $\{\ket{u_i}\}$ is an orthonormal basis, then
+\[
+\sum_{i}\ket{u_i}\bra{u_i} 
+\;=\;
+\mathbf{1},
+\]
+where $\mathbf{1}$ is the identity operator.  This is a powerful tool for expanding or inserting identities in quantum‐mechanical derivations.

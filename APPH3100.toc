@@ -4,11 +4,23 @@
 \contentsline {section}{\numberline {2.1}Time Independent Equation}{5}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Infinite Square Well}{7}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Infintie Potential Square Well}{11}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Linear Algebra}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Algebra Notation}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Expectation Values}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Commutators}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Infinite Square Well}{17}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Finite Barriers}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Finite Square Well}{19}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Probability Current}{21}{section.4.2}%
+\contentsline {paragraph}{Finite‐Dimensional Analogy.}{14}{section*.13}%
+\contentsline {paragraph}{Ket and Bra Notation (Dirac).}{14}{section*.14}%
+\contentsline {paragraph}{Examples.}{15}{section*.16}%
+\contentsline {paragraph}{Noncommuting Operators.}{15}{section*.17}%
+\contentsline {paragraph}{Completeness (Resolution of the Identity).}{15}{section*.19}%
+\contentsline {section}{\numberline {2.4}Algebra Notation}{15}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Expectation Values}{16}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Commutators}{17}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Infinite Square Well}{18}{section.2.7}%
+\contentsline {paragraph}{Operators and Expectation Values.}{18}{section*.24}%
+\contentsline {paragraph}{Review of Commutators.}{19}{section*.26}%
+\contentsline {paragraph}{Simultaneous Eigenstates.}{19}{section*.27}%
+\contentsline {paragraph}{Cauchy–Schwarz and Commutators.}{19}{section*.29}%
+\contentsline {paragraph}{Case $0 < E < V_0$:}{20}{section*.33}%
+\contentsline {paragraph}{Case $E > V_0$:}{20}{section*.34}%
+\contentsline {paragraph}{Even solutions.}{22}{section*.43}%
+\contentsline {paragraph}{Odd solutions.}{22}{section*.44}%
+\contentsline {chapter}{\numberline {3}Finite Barriers}{24}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Finite Square Well}{24}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Probability Current}{26}{section.3.2}%

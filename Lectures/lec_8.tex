@@ -1,0 +1,127 @@
+\lecture{8}{Feb 24 01:10}{}
+\section*{Stationary States and Operator Expectation Values}
+
+A stationary state $\ket{\psi_n}$ satisfies
+\[
+\hat{H}\,\ket{\psi_n} \;=\; E_n\,\ket{\psi_n}.
+\]
+In general, a state $\ket{\psi}$ can be expanded in the energy eigenbasis:
+\[
+\ket{\psi} \;=\; \sum_{n} c_n \,\ket{\psi_n}.
+\]
+
+\paragraph{Operators and Expectation Values.}
+Let $\hat{O}$ be any operator.  In the energy‐eigenbasis \(\{\ket{\psi_n}\}\), its matrix representation is \(\bigl(\hat{O}\bigr)_{mn} = \bra{\psi_m}\hat{O}\ket{\psi_n}\).  
+The expectation value of \(\hat{O}\) in a state \(\ket{\psi}\) is
+\[
+\langle \hat{O} \rangle 
+\;=\; \bra{\psi}\hat{O}\ket{\psi}
+\;=\;
+(\bra{\psi}\,\hat{O})
+\ket{\psi}
+\;=\; \text{[row] [matrix] [col]}.
+\]
+
+\section*{Commutators and Simultaneous Diagonalization}
+
+\paragraph{Review of Commutators.}
+For two operators $\hat{O}$ and $\hat{Q}$, their commutator is
+\[
+[\hat{O}, \hat{Q}] \;=\; \hat{O}\,\hat{Q} \;-\; \hat{Q}\,\hat{O}.
+\]
+If $[\hat{x}, \hat{p}]$ is a constant (specifically $i\hbar$ in quantum mechanics), then $x$ and $p$ cannot be simultaneously diagonalized.
+
+\paragraph{Simultaneous Eigenstates.}
+If $[\hat{O}, \hat{Q}] = 0$, then we can find a basis of states which are eigenstates of both $\hat{O}$ \emph{and} $\hat{Q}$.  In that case,
+\[
+\hat{O}\,\ket{\alpha_n} = o_n\,\ket{\alpha_n},
+\quad
+\hat{Q}\,\ket{\alpha_n} = q_n\,\ket{\alpha_n},
+\]
+for the \emph{same} set of states $\ket{\alpha_n}$.
+
+\section*{Generalized Uncertainty Principle}
+
+\noindent
+\textbf{Variance definitions.}  
+Suppose $\ket{\psi}$ is normalized, and let $\hat{O}$ and $\hat{Q}$ be Hermitian observables with real eigenvalues.  Define their variances in state $\ket{\psi}$:
+\[
+\sigma_O^2 \;=\; \langle (\hat{O} - \langle \hat{O}\rangle)^2 \rangle,
+\quad
+\sigma_Q^2 \;=\; \langle (\hat{Q} - \langle \hat{Q}\rangle)^2 \rangle.
+\]
+We often let
+\[
+\ket{f} 
+\;=\; (\hat{O} - \langle \hat{O}\rangle)\,\ket{\psi}, 
+\quad
+\ket{g} 
+\;=\; (\hat{Q} - \langle \hat{Q}\rangle)\,\ket{\psi}.
+\]
+Because $\hat{O}$ is Hermitian, $\langle f\mid f\rangle = \sigma_O^2$, and similarly for $\hat{Q}$.
+
+\paragraph{Cauchy–Schwarz and Commutators.}
+We use the fact that 
+\[
+|\langle f \mid g \rangle|^2 
+\;\le\;
+\langle f \mid f \rangle\,\langle g \mid g \rangle 
+\;=\; 
+\sigma_O^2 \,\sigma_Q^2.
+\]
+Moreover, the imaginary part of $\langle f\mid g\rangle$ is related to the commutator:
+\[
+\Im\bigl(\langle f\mid g \rangle\bigr)
+\;=\;
+\tfrac{1}{2i}\,\langle \psi\mid [(\hat{O}-\langle \hat{O}\rangle),(\hat{Q}-\langle \hat{Q}\rangle)] \mid \psi\rangle
+\;=\;
+\tfrac{1}{2i}\,\langle [\hat{O},\hat{Q}] \rangle.
+\]
+Hence,
+\[
+\sigma_O^2\,\sigma_Q^2 
+\;\ge\;
+\bigl|\Im(\langle f\mid g\rangle)\bigr|^2
+\;=\;
+\tfrac{1}{4}\,\bigl|\langle [\hat{O}, \hat{Q}] \rangle \bigr|^2.
+\]
+Therefore,
+\[
+\sigma_O\,\sigma_Q \;\ge\; 
+\tfrac{1}{2}\,\bigl|\langle [\hat{O},\hat{Q}] \rangle\bigr|.
+\]
+This is the \emph{generalized uncertainty principle}.
+
+\subsection*{Example:}
+For the canonical pair $\hat{x}$ and $\hat{p}$ with $[\hat{x}, \hat{p}] = i\hbar,$ one obtains
+\[
+\sigma_x\,\sigma_p 
+\;\ge\; 
+\tfrac{\hbar}{2}.
+\]
+Similarly for energy and time (though $t$ is not exactly an operator in the same sense), one often writes $\sigma_E\,\sigma_t \approx \hbar/2$.
+
+\section*{Observables and Probabilities}
+
+A general state can be expanded as
+\[
+\ket{\Psi} = \sum_i \, a_i \,\ket{\phi_i}.
+\]
+If $\hat{H}\,\ket{\phi_i} = E_i\,\ket{\phi_i}$ (\emph{i.e.\ } $\ket{\phi_i}$ are energy eigenstates), then the probability of measuring energy $E_i$ is $|a_i|^2$.  In general,
+\[
+\langle\Psi\mid \hat{H} \mid\Psi\rangle 
+\;=\;
+\sum_i |a_i|^2\,E_i.
+\]
+Thus $|a_i|^2$ is interpreted as the probability (born rule) associated with outcome $E_i$.
+
+\section*{Finite Square Well (FSQ) --- Brief Sketch}
+
+Consider a 1D potential well of depth $V_0>0$ extending from $x=-\tfrac{a}{2}$ to $x=+\tfrac{a}{2}$.  Inside the well ($|x|<a/2$), $V=0$, so the wavefunction is oscillatory.  Outside the well ($|x|>a/2$), $V=V_0$, so the wavefunction may be exponentially decaying (for $E<V_0$) or have free‐particle–like behavior (for $E>V_0$).
+
+\paragraph{Case $0 < E < V_0$:} 
+Inside:  wave is sinusoidal with $k = \sqrt{2mE}/\hbar$.\\
+Outside: decays exponentially since $E - V_0 < 0$.
+
+\paragraph{Case $E > V_0$:} 
+Outside region is like a free particle with $k' = \sqrt{2m(E - V_0)}/\hbar,$ allowing partial reflection and transmission. Repeated wells can create resonance and “band” structures in a solid‐state context.
