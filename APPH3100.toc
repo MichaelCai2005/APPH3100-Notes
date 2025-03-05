@@ -8,3 +8,7 @@
 \contentsline {section}{\numberline {3.1}Algebra Notation}{15}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Expectation Values}{15}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Commutators}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Infinite Square Well}{17}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Finite Barriers}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Finite Square Well}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Probability Current}{21}{section.4.2}%

@@ -1,0 +1,40 @@
+\lecture{7}{Feb 19 01:10}{}
+\section{Infinite Square Well}
+Consider the wave function
+\[
+    \ket{\psi _n} = \sqrt{\frac{2}{a}} \sin (n \pi \frac{x}{a}) 
+\]
+where \(\bra{\psi _n} \ket{\psi_n} = \delta_{mn} \) and we have that 
+\(\hat{H} \ket{\psi _n} =E_n \ket{\psi _n}\). We have therefore that 
+\[
+    \bra{\psi _m} \hat{H} \ket{\psi _n} = \bra{\psi _m} E_n \ket{\psi _n} = E_n \delta_{mn} 
+\]
+where \(\delta_{mn} = \begin{pmatrix}
+    1 &  &   \\
+     & \dots  &   \\
+     &  &  1 \\
+\end{pmatrix} \) 
+\(\hat{H}  = \begin{pmatrix}
+    E_1 &  &   \\
+     & E_2 &   \\
+     &  & \dots   \\
+\end{pmatrix}\) 
+We have that 
+\[
+    H_{m,n} = \bra{\psi _m} \hat{H} \ket{\psi _n}
+\]
+in the \( (\psi _n) \) basis. Other operators we have are
+\[
+    \hat{x} \ket{\psi _n} = x \sqrt{\frac{2}{a}} \sin (n \pi \frac{x}{a}) 
+\] which is not proportional to \(\psi _n\). This is the same for
+\[
+    \hat{p} \ket{\psi _n} = \frac{d}{\mathrm{d}x } \sin (n \pi  \frac{x}{a}) \cos (npi \frac{x}{a})
+\]
+
+\[
+    x_{\min } \approx \bra{\psi _m} \hat{x} \ket{\psi _n} = 
+    \frac{2}{a} \int_{0}^{a} x \sin (m \pi  \frac{x}{a}) \sin \left( n \pi \frac{x}{a} \right)  \,\mathrm{d}x  
+\]
+\[
+    = \frac{1}{a} \int_{0}^{a} x \left[ \cos \left( (m-n)\pi \frac{x}{a} \right)  - \cos \left( (m+n)\pi \frac{x}{a} \right) \right]  \,\mathrm{d}x 
+\]
